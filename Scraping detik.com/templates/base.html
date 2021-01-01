@@ -17,15 +17,15 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="\detik_populer">Detik Populer</a></li>
+      <li class="active"><a href="\idr_rates">IDR Rates</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="container" style="margin-top:80px; text-align:center">
-    {% for image in images %}
-        {{ image| safe }}
-        <a href="{{ image.find('a')['href']|safe }}">{{ image.find('a').find('img')['title']|safe }}</a>
-    {% endfor %}
+    {% block body %}
+
+    {% endblock %}
 </div>
 
 </body>

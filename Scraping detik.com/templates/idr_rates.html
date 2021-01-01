@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for data in datas.values() %}
+      <tr>
+          <td>{{ data['code'] }}</td>
+          <td>{{ data['name'] }}</td>
+          <td>{{ data['date'] }}</td>
+          <td>{{ data['inverseRate'] }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
