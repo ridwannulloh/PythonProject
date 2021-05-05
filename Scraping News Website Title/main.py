@@ -19,4 +19,4 @@ for link in url:
     url_title[link] = soup.title.string
 
 for key, value in url_title.items():
-    print(f'Dengan memanggil = {key}, maka diperoleh judul website = {value}')
+    print(f'{key} --> {value}')
