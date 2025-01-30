@@ -20,3 +20,4 @@ for link in url:
 
 for key, value in url_title.items():
     print(f'{key} --> {value}')
+
