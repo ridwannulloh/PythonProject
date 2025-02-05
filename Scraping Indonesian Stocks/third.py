@@ -73,7 +73,7 @@ def fetch_multiple_stocks(df):
 
 # Example usage
 df_symbols = scrape_stock_data()
-print(df_symbols)
-# df_all_stocks = fetch_multiple_stocks(df_symbols)
-# df_all_stocks.to_csv("scraped_stocks.csv", index=False)
-# print("Data exported to scraped_stocks.csv")
+# print(df_symbols)
+df_all_stocks = fetch_multiple_stocks(df_symbols)
+df_all_stocks.to_csv("scraped_stocks.csv", index=False)
+print("Data exported to scraped_stocks.csv")
