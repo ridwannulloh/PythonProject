@@ -34,6 +34,3 @@ else:
             print("No data found in the first row.")
     except IndexError:
         print("Could not find the historical data table.")
-        
-        
-
